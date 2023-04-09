@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input, button, details {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type=text], input[type=number] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 15px;
+    border-radius: 0;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+input[type=number] {
+    width: auto;
+}
+
+summary {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+details {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+button {
+    background-color: #009065;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #00754c;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+      
+/* Style the images container */
+#recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Style the individual images */
+#recipes img {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Add hover effect to images */
+#recipes img:hover {
+  border-color: #999;
+  transform: scale(1.05);
+}
+
+/* Style the recipe display */
+#recipe-display {
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+#results {
+  display: block;
+  width: 100%;
+  clear: both;
+}

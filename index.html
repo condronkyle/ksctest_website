@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShumAI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>ShumAI</h1>
+    <form id="recipeForm">
+      <div class="input-group">
+        <label for="ingredients">Ingredients (comma-separated):</label>
+        <input type="text" id="ingredients" name="ingredients" required>
+      </div>
+
+      <details>
+        <summary>Advanced Options</summary>
+
+        <div class="input-group">
+          <label for="cuisine">Optionally, enter a specific cuisine you would like to cook:</label>
+          <input type="text" id="cuisine" name="cuisine" placeholder="Italian">
+        </div>
+
+        <div class="input-group">
+          <label for="difficulty">Optionally, choose your preferred complexity level:</label>
+          <select id="difficulty" name="difficulty">
+            <option value="1">Simple and easy home cooking</option>
+            <option value="2" selected>For experienced home chefs</option>
+            <option value="3">Impressive restaurant quality</option>
+            <option value="4">Extremely fancy fine-dining</option>
+          </select>
+        </div>
+      </details>
+
+      <button type="submit">Generate Dishes</button>
+    </form>
+    <div id="results" style="display: none;">
+      <h2>Generated Dishes</h2>
+      <div id="recipes"></div>
+      <div id="recipe-display">
+        <h2>Recipe</h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
